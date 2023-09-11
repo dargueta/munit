@@ -131,7 +131,7 @@ extern "C" {
 #  define MUNIT_UNUSED
 #endif
 
-#if defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) && !defined(__PGI)
+#if defined(__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) && !defined(__PGI) && !defined(__TINYC__)
 #  define MUNIT_ARRAY_PARAM(name) name
 #else
 #  define MUNIT_ARRAY_PARAM(name)
